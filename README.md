@@ -66,27 +66,7 @@ The **Notes Application** is a web-based platform developed using Flask, designe
     pip install -r requirements.txt
     ```
 
-4. **Set Up the Database**
-
-    Initialize the SQLite database by running the SQL commands provided. You can use the SQLite command-line tool or integrate the setup within the Flask application.
-
-    ```sql
-    CREATE TABLE users (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        username TEXT NOT NULL UNIQUE,       
-        password TEXT NOT NULL
-    );
-
-    CREATE TABLE notes (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        user_id INTEGER,
-        title TEXT,
-        content TEXT,
-        FOREIGN KEY(user_id) REFERENCES users(id)
-    );
-    ```
-
-5. **Run the Application**
+4. **Run the Application**
 
     Start the Flask development server:
 
@@ -94,7 +74,7 @@ The **Notes Application** is a web-based platform developed using Flask, designe
     python app.py
     ```
 
-    Access the application by navigating to `http://127.0.0.1:5000/` in your web browser.
+    Access the application by navigating to `http://127.0.0.1:5000/`, or the link provided in your terminal, in your web browser.
 
 ## Usage
 
