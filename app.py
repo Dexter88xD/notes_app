@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
+from sqlite3 import IntegrityError
 import sqlite3
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -36,13 +37,18 @@ def login():
 def register():
     if request.method == 'POST':
         username = request.form['username']
-        password = generate_password_hash(request.form['password'])
-
-        conn = get_db()
-        conn.execute('INSERT INTO users (username, password) VALUES (?, ?)', (username, password))
-        conn.commit()
-        flash('Registration successful! Now, please login with your new credentials.', 'success')
-        return redirect(url_for('login'))
+        password = request.form['password']
+        try:
+            conn = get_db_connection()
+            conn.execute('INSERT INTO users (username, password) VALUES (?, ?)', (username, password))
+            conn.commit()
+            conn.close()
+            flash('Registration successful!', 'success')
+            return redirect(url_for('login'))
+        except IntegrityError:
+            flash('Username already exists. Please choose a different one.', 'error')
+            return redirect(url_for('register'))
+    
     return render_template('register.html')
 
 @app.route('/logout')
