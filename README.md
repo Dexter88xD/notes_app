@@ -45,7 +45,7 @@ The **Notes Application** is a web-based platform developed using Flask, designe
     Clone the project repository to your local machine:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Dexter88xD/notes_app
     cd notes_app
     ```
 
