@@ -150,7 +150,7 @@ Contributions are welcome! If you have suggestions for improvements or find any 
 
 ## License
 
-[Specify your project's license here]
+This project is licensed under the MIT Licence - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
