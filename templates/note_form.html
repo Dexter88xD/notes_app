@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="edit-page">
+    <h2>{% if note %}Edit Note{% else %}Add Note{% endif %}</h2>
+
+    <form action="" method="POST">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" value="{% if note %}{{ note[2] }}{% endif %}" required>
+
+        <label for="note">Note Content</label>
+        <textarea id="note" name="note" required>{% if note %}{{ note[3] }}{% endif %}</textarea>
+
+        <button type="submit">{% if note %}Update{% else %}Add{% endif %} Note</button>
+    </form>
+</div>
+{% endblock %}

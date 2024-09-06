@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the header is above other content */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2%;
+    width: 500px;
+    max-height: 75vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflow from the main element */
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.notes-container {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling for the notes list */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul li a {
+    margin-left: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.add-note-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #215a88;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-note-btn:hover {
+    background-color: #28a3a7;
+}
+
+.flashes {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.flashes li.error {
+    color: red;
+    font-weight: bold;
+}
+
+.flashes li.success {
+    color: rgb(35, 156, 35);
+    font-weight: bold;
+}
+
+.login-page, .register-page, .edit-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 500px;
+    height: 400px;
+    padding: 0px;
+}
+
+.login-page form, .register-page form, .edit-page form {
+    width: 400px;
+    height: auto;
+    background-color: white;
+    padding: 20px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page label, .register-page label, .edit-page label {
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: bold;
+    color: #333;
+}
+
+.login-page input, .register-page input, .edit-page input,
+.login-page textarea, .register-page textarea, .edit-page textarea {
+    width: 100%; 
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-page input:focus, .register-page input:focus, .edit-page input:focus,
+.login-page textarea:focus, .register-page textarea:focus, .edit-page textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.login-page button, .register-page button, .edit-page button {
+    padding: 12px;
+    background-color: #215a88;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.login-page button:hover, .register-page button:hover, .edit-page button:hover {
+    background-color: #28a3a7;
+}
+
+/* Add spacing for form headers */
+.login-page h2, .register-page h2, .edit-page h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
