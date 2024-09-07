@@ -1,5 +1,6 @@
 # Notes Application
-#### Video Demo:  [Insert Video URL Here]
+#### Video Demo:  https://youtu.be/0qYBFmQHDnc
+[![Watch the video](https://img.youtube.com/vi/0qYBFmQHDnc/0.jpg)](https://www.youtube.com/watch?v=0qYBFmQHDnc)
 #### Description:
 
 The **Notes Application** is a web-based platform developed using Flask, designed to help users create, manage, and organize their personal notes efficiently. This application provides a seamless user experience with functionalities including user registration, authentication, and full CRUD (Create, Read, Update, Delete) operations for managing notes. Leveraging SQLite as the backend database, the application ensures data persistence and security through password hashing and session management.
