@@ -81,20 +81,27 @@ The **Notes Application** is a web-based platform developed using Flask, designe
 1. **Register a New Account**
 
     Navigate to the registration page and create a new account by providing a unique username and password.
+   ![register page](./images/register_page.jpg)
 
-2. **Login**
+3. **Login**
 
     After registering, log in using your credentials to access the notes dashboard.
+   ![login page](./images/login_page.jpg)
 
-3. **Manage Notes**
+4. **Manage Notes**
 
     - **Add a New Note**: Click on the "Add New Note" button to create a new note by providing a title and content.
+    - ![add notes page](./images/add_note_page.jpg)
     - **Edit a Note**: Click on the "Edit" link next to a note to modify its title or content.
+    - ![index page with notes](./images/index_with_notes_page)
+    - ![update notes page](./images/update_note_page.jpg)
     - **Delete a Note**: Click on the "Delete" link next to a note to remove it from your collection.
+    - ![index page with notes](./images/index_with_notes_page)
 
-4. **Logout**
+5. **Logout**
 
     Click the "Logout" link in the navigation bar to end your session securely.
+   ![index page](./images/index_page.jpg)
 
 ## Design Choices
 
