@@ -91,6 +91,7 @@ The **Notes Application** is a web-based platform developed using Flask, designe
 4. **Manage Notes**
 
     - **Add a New Note**: Click on the "Add New Note" button to create a new note by providing a title and content.
+     ![index page](./images/index_page.jpg)
      ![add notes page](./images/add_note_page.jpg)
     - **Edit a Note**: Click on the "Edit" link next to a note to modify its title or content.
      ![index page with notes](./images/index_with_notes_page.jpg)
